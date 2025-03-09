@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieStream - Premium UI</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1 class="logo">SILVERSCREEN+</h1>
+        <input type="text" class="search-bar" placeholder="Search movies...">
+        <img src="assets/images/profile.jpg" class="profile-icon" alt="User Profile">
+    </div>
+
+    <!-- Genre Filter -->
+    <div class="filters">
+        <button class="filter-btn">Action</button>
+        <button class="filter-btn">Comedy</button>
+        <button class="filter-btn">Drama</button>
+        <button class="filter-btn">Horror</button>
+        <button class="filter-btn">Sci-Fi</button>
+    </div>
+
+    <!-- Movie Grid -->
+    <div class="movie-grid">
+        <div class="movie-card" data-title="ATLAS" data-description="Atlas is a 2024 American science fiction action film directed by Brad Peyton. Jennifer Lopez stars as Atlas Shepherd, a counterterrorism analyst who, despite her deep distrust of artificial intelligence, must collaborate with an AI to prevent a rogue robot's catastrophic plan. The film also features Simu Liu, Sterling K. Brown, and Mark Strong in pivotal roles." data-rating="4.5" data-cast="Jennifer Lopez, Simu Liu" data-image="assets/images/movie1.jpg" data-actors='[{"name": "Jennifer Lopez", "image": "assets/images/jlo.jpg"}, {"name": "Simu Liu", "image": "assets/images/simu.jpg"}]'>
+            <img src="assets/images/movie1.jpg" alt="Movie Thumbnail">
+            <p>ATLAS</p>
+            <div class="trailer-container">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/Jokpt_LJpbw" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="movie-card" data-title="BERLIN" data-description="In the summer of 1990, as Germany approaches reunification, 19-year-old Maria embarks on a passionate relationship with a solitary farmer twice her age in the German film .'Someday We'll Tell Each Other Everything'." data-rating="4.0" data-cast="Pedro Alonso, Samantha Siquerios" data-image="assets/images/movie2.jpg" data-actors='[{"name": "Pedro Alonso", "image": "assets/images/pedro.jpg"}, {"name": "Samantha Siquerios", "image": "assets/images/samantha.jpg"}]'>
+            <img src="assets/images/movie2.jpg" alt="Movie Thumbnail">
+            <p>BERLIN</p>
+            <div class="trailer-container">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/ZONoMgeGAbI" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="movie-card" data-title="THE GENTLEMEN" data-description="'The Gentlemen' is a 2019 crime film directed by Guy Ritchie, featuring Matthew McConaughey as Mickey Pearson, an American cannabis kingpin in the UK seeking to sell his empire, leading to schemes and plots among those vying for his domain. " data-rating="4.8" data-cast="Guy Ritchie, Charlie Hunnam" data-image="assets/images/movie3.jpg" data-actors='[{"name": "Guy Ritchie", "image": "assets/images/guy.jpg"}, {"name": "Charlie Hunnam", "image": "assets/images/charlie.jpg"}]'>
+            <img src="assets/images/movie3.jpg" alt="Movie Thumbnail">
+            <p>THE GENTLEMEN</p>
+            <div class="trailer-container">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/Ify9S7hj480" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Movie Details Modal -->
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="Movie Image">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <p><strong>Rating:</strong> <span id="modal-rating"></span></p>
+            <p><strong>Cast:</strong> <span id="modal-cast"></span></p>
+            <div id="modal-actors"></div>
+        </div> 
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
